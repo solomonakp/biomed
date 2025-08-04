@@ -120,6 +120,7 @@ export const DrugList = ({ drugs }: Props) => {
                     </Table>
                 )}
             </section>
+            {/* Note: This will be refactored to use button component */}
             <section>
                 <div className="max-w-screen-xl mx-auto mt-8  text-(--color-font-black) ">
                     <div

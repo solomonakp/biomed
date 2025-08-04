@@ -28,6 +28,8 @@ type LoaderBaseProps = {
     variant?: Variant;
 };
 
+export type LoaderRef = HTMLDivElement | null;
+
 type HTMLDivElementAttributes = React.ComponentPropsWithoutRef<'div'>;
 
 export type LoaderProps = LoaderBaseProps & HTMLDivElementAttributes;

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './root-layout.css';
-import { Header } from '@components/header';
+import { NavBar } from '@components/nav-bar';
 import { AppContainer } from '@components/app-container/app-container';
 
 const inter = Inter({
@@ -29,7 +29,7 @@ export const RootLayout = ({
             </head>
 
             <body className={`${inter.variable} antialiased`}>
-                <Header />
+                <NavBar />
                 <AppContainer>{children}</AppContainer>
             </body>
         </html>
