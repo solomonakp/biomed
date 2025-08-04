@@ -1,16 +1,23 @@
+import { useRef } from 'react';
 import { SIZES, VARIANT_STYLES } from './loader.const';
-import type { LoaderProps as Props } from './loader.props';
+import type { LoaderRef as Ref, LoaderProps as Props } from './loader.props';
+import { useAriaLoadingAttr } from '@hooks/use-aria-loading-attr';
 
 export const Loader = (props: Props) => {
     const { size = 'sm', variant = 'static', className, ...rest } = props;
 
     const { height, width } = SIZES[size];
 
+    const ref = useRef<Ref>(null);
+
+    useAriaLoadingAttr<Ref>({ ref });
+
     return (
         <div
             role="alert"
             className={`flex items-center justify-center bg-inherit z-(--z-index-loader) h-full ${className} ${VARIANT_STYLES[variant]}`}
             aria-live="assertive"
+            ref={ref}
             {...rest}
         >
             <svg

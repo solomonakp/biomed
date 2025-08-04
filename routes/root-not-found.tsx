@@ -2,6 +2,7 @@
 
 import { EmptyState } from '@components/empty-state';
 import { useRouter } from 'next/navigation';
+import PageNotFoundImage from 'public/page-not-found.jpg';
 
 export const RootNotFoundPageMetadata = {
     title: 'Not Found',
@@ -15,6 +16,7 @@ export const RootNotFoundPage = () => {
             title="Page not found"
             description="The page you are looking for does not exist or has been moved."
             action={{ text: 'Go Back', onClick: () => router.push('/') }}
+            src={PageNotFoundImage}
         />
     );
 };

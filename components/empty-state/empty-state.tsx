@@ -16,22 +16,39 @@ export const EmptyState = (props: Props) => {
     return (
         <div
             className="w-full flex flex-col items-center text-center pt-2"
+            data-testid="empty-state"
             {...rest}
         >
-            {<Image src={src} alt={alt} className="mb-4" />}
+            {
+                <Image
+                    src={src}
+                    alt={alt}
+                    className="mb-4"
+                    data-testid="empty-state-image"
+                />
+            }
 
-            <h1 className="text-(--color-font-black) text-[1.125rem] font-bold mb-2">
+            <h1
+                className="text-(--color-font-black) text-[1.125rem] font-bold mb-2"
+                data-testid="empty-state-title"
+            >
                 {title}
             </h1>
 
             {description && (
-                <p className=" text-(--color-font-black) font-normal py-2 max-w-lg mb-5">
+                <p
+                    className=" text-(--color-font-black) font-normal py-2 max-w-lg mb-5"
+                    data-testid="empty-state-text"
+                >
                     {description}
                 </p>
             )}
 
             {action?.text && (
-                <Button onClick={(e) => action.onClick(e)}>
+                <Button
+                    onClick={(e) => action.onClick(e)}
+                    data-testid="empty-state-button"
+                >
                     {action.text}
                 </Button>
             )}
