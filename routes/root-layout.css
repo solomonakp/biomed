@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --font-color: #00000;
+    --color-accent: #e5e7eb;
+    --text-lg: 2rem;
+    --bg-search-box: #f2f2f5;
+    --color-font-black: #121417;
+    --z-index-loader: 1000;
+    --color-accent-2: #637887;
+    --bg-button: #f0f2f5;
+    --color-pending: #0056ac;
+    --color-approved: #0a880a;
+}
+
+@theme inline {
+    --color-background: var(--font-color);
+    --color-foreground: var(--font-color);
+    --font-sans: var(--font-inter);
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.app-container {
+    min-height: calc(100vh - 6.25rem);
+}
+
+.table-section {
+    min-height: calc(100vh - (6.25rem + 14rem));
+}
+
+.sr-only {
+    position: absolute;
+    width: 0.0625rem;
+    height: 0.0625rem;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+    clip-path: inset(50%); /* partially supported only by Chrome 114. */
+    white-space: nowrap;
+}

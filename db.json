@@ -1,0 +1,304 @@
+{
+    "drugs": [
+        {
+            "id": "9b4dbb7d-7a77-4441-a236-1fd2c92c0240",
+            "name": "Nexapril",
+            "status": "Approved",
+            "description": "A revolutionary treatment for chronic hypertension with minimal side effects.",
+            "mechanismOfAction": "Dual ACE/NEP inhibition pathway",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Mild dizziness", "Dry cough"],
+            "manufacturer": "CardioPharm"
+        },
+        {
+            "id": "7c5d1e3a-9b8f-4d2c-b531-e42a8dd90b1d",
+            "name": "Immunostat",
+            "status": "Pending",
+            "description": "Novel immunotherapy drug for advanced melanoma treatment.",
+            "mechanismOfAction": "T-cell receptor modulation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Fatigue", "Skin rash", "Fever"],
+            "manufacturer": "ImmunoTech"
+        },
+        {
+            "id": "f8e9c2b1-6a5d-4f7e-8c3b-9d2e1a4b7c5d",
+            "name": "Cerebrolex",
+            "status": "Pending",
+            "description": "Promising treatment for early-stage Alzheimer's disease.",
+            "mechanismOfAction": "Beta-amyloid plaque reduction",
+            "clinicalTrials": "Phase II completed",
+            "sideEffects": ["Headache", "Nausea", "Sleep changes"],
+            "manufacturer": "NeuroCorp"
+        },
+        {
+            "id": "2a4b6c8d-0e1f-4g5h-6i7j-8k9l0m1n2o3p",
+            "name": "Arthritex",
+            "status": "Approved",
+            "description": "Advanced treatment for rheumatoid arthritis.",
+            "mechanismOfAction": "Selective inflammatory pathway inhibition",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Joint pain", "Fatigue"],
+            "manufacturer": "RheumaPharma"
+        },
+        {
+            "id": "3e5f7g9h-1i2j-3k4l-5m6n-7o8p9q0r1s2t",
+            "name": "Pulmoease",
+            "status": "Approved",
+            "description": "Long-acting bronchodilator for COPD management.",
+            "mechanismOfAction": "Beta-2 agonist with novel delivery system",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Dry mouth", "Mild tremor"],
+            "manufacturer": "RespiraCare"
+        },
+        {
+            "id": "4f6h8j0k-2l3m-4n5p-6q7r-8s9t0u1v2w3x",
+            "name": "Diabetrol",
+            "status": "Pending",
+            "description": "Next-generation diabetes management drug.",
+            "mechanismOfAction": "Glucose metabolism enhancement",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Nausea", "Appetite changes"],
+            "manufacturer": "MetaboCorp"
+        },
+        {
+            "id": "5g7i9k1l-3m4n-5p6q-7r8s-9t0u1v2w3x4y",
+            "name": "Osteogen",
+            "status": "Approved",
+            "description": "Revolutionary treatment for osteoporosis.",
+            "mechanismOfAction": "Enhanced bone mineralization",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Joint stiffness", "Calcium level changes"],
+            "manufacturer": "BoneHealth"
+        },
+        {
+            "id": "6h8j0l2m-4n5p-6q7r-8s9t-0u1v2w3x4y5z",
+            "name": "Dermaclear",
+            "status": "Pending",
+            "description": "Advanced treatment for severe psoriasis.",
+            "mechanismOfAction": "Immune response modification",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Skin sensitivity", "Itching"],
+            "manufacturer": "DermaPharm"
+        },
+        {
+            "id": "7i9k1l3m-5n6p-7q8r-9s0t-1u2v3w4x5y6z",
+            "name": "Hepatomax",
+            "status": "Pending",
+            "description": "Novel treatment for chronic liver disease.",
+            "mechanismOfAction": "Hepatic regeneration stimulation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Fatigue", "Appetite changes"],
+            "manufacturer": "LiverTech"
+        },
+        {
+            "id": "8j0l2m4n-6p7q-8r9s-0t1u-2v3w4x5y6z7a",
+            "name": "Oncovax",
+            "status": "Approved",
+            "description": "Targeted therapy for advanced breast cancer.",
+            "mechanismOfAction": "HER2 receptor targeting",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Hair loss", "Nausea", "Fatigue"],
+            "manufacturer": "CancerCare"
+        },
+        {
+            "id": "9k1m3n5p-7q8r-9s0t-1u2v-3w4x5y6z7a8b",
+            "name": "Gastroease",
+            "status": "Approved",
+            "description": "Treatment for chronic acid reflux disease.",
+            "mechanismOfAction": "Proton pump inhibition",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Headache", "Diarrhea"],
+            "manufacturer": "GastroHealth"
+        },
+        {
+            "id": "0l2m4n6p-8q9r-0s1t-2u3v-4w5x6y7z8a9b",
+            "name": "Neuropain",
+            "status": "Pending",
+            "description": "Advanced treatment for neuropathic pain.",
+            "mechanismOfAction": "Selective nerve blocking",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Drowsiness", "Dizziness"],
+            "manufacturer": "PainCare"
+        },
+        {
+            "id": "1m3n5p7q-9r0s-1t2u-3v4w-5x6y7z8a9b0c",
+            "name": "Cardiostat",
+            "status": "Approved",
+            "description": "Novel treatment for heart failure.",
+            "mechanismOfAction": "Cardiac output enhancement",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Low blood pressure", "Dizziness"],
+            "manufacturer": "HeartPharm"
+        },
+        {
+            "id": "2n4p6q8r-0s1t-2u3v-4w5x-6y7z8a9b0c1d",
+            "name": "Respirex",
+            "status": "Pending",
+            "description": "New treatment for severe asthma.",
+            "mechanismOfAction": "Bronchial inflammation reduction",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Cough", "Throat irritation"],
+            "manufacturer": "LungCare"
+        },
+        {
+            "id": "3p5q7r9s-1t2u-3v4w-5x6y-7z8a9b0c1d2e",
+            "name": "Thrombostop",
+            "status": "Approved",
+            "description": "Advanced blood clot prevention therapy.",
+            "mechanismOfAction": "Novel anticoagulation pathway",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Easy bruising", "Bleeding risk"],
+            "manufacturer": "BloodTech"
+        },
+        {
+            "id": "4q6r8s0t-2u3v-4w5x-6y7z-8a9b0c1d2e3f",
+            "name": "Psychobal",
+            "status": "Pending",
+            "description": "New generation antidepressant.",
+            "mechanismOfAction": "Serotonin modulation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Sleep changes", "Appetite changes"],
+            "manufacturer": "MentalCare"
+        },
+        {
+            "id": "5r7s9t1u-3v4w-5x6y-7z8a-9b0c1d2e3f4g",
+            "name": "Rheumaflex",
+            "status": "Approved",
+            "description": "Treatment for severe rheumatoid arthritis.",
+            "mechanismOfAction": "TNF-alpha inhibition",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Infection risk", "Injection site reaction"],
+            "manufacturer": "ArthritisCare"
+        },
+        {
+            "id": "6s8t0u2v-4w5x-6y7z-8a9b-0c1d2e3f4g5h",
+            "name": "Allershield",
+            "status": "Pending",
+            "description": "Novel treatment for severe allergies.",
+            "mechanismOfAction": "Immunoglobulin E neutralization",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Headache", "Nasal irritation"],
+            "manufacturer": "AllergyTech"
+        },
+        {
+            "id": "7t9u1v3w-5x6y-7z8a-9b0c-1d2e3f4g5h6i",
+            "name": "Osteoforge",
+            "status": "Approved",
+            "description": "Advanced treatment for bone disorders.",
+            "mechanismOfAction": "Osteoblast activation",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Joint pain", "Muscle cramps"],
+            "manufacturer": "BoneTech"
+        },
+        {
+            "id": "8u0v2w4x-6y7z-8a9b-0c1d-2e3f4g5h6i7j",
+            "name": "Renalguard",
+            "status": "Pending",
+            "description": "Novel treatment for chronic kidney disease.",
+            "mechanismOfAction": "Renal function enhancement",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Electrolyte changes", "Fatigue"],
+            "manufacturer": "KidneyCare"
+        },
+        {
+            "id": "9v1w3x5y-7z8a-9b0c-1d2e-3f4g5h6i7j8k",
+            "name": "Hepatoshield",
+            "status": "Approved",
+            "description": "Treatment for chronic hepatitis.",
+            "mechanismOfAction": "Viral replication inhibition",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Nausea", "Fatigue", "Headache"],
+            "manufacturer": "LiverCare"
+        },
+        {
+            "id": "0w2x4y6z-8a9b-0c1d-2e3f-4g5h6i7j8k9l",
+            "name": "Neuromax",
+            "status": "Pending",
+            "description": "Treatment for multiple sclerosis.",
+            "mechanismOfAction": "Myelin protection",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Dizziness", "Vision changes"],
+            "manufacturer": "NerveHealth"
+        },
+        {
+            "id": "1x3y5z7a-9b0c-1d2e-3f4g-5h6i7j8k9l0m",
+            "name": "Vasculex",
+            "status": "Approved",
+            "description": "Advanced treatment for vascular disorders.",
+            "mechanismOfAction": "Endothelial function improvement",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Headache", "Flushing"],
+            "manufacturer": "VascularTech"
+        },
+        {
+            "id": "2y4z6a8b-0c1d-2e3f-4g5h-6i7j8k9l0m1n",
+            "name": "Dermanova",
+            "status": "Pending",
+            "description": "Novel treatment for severe eczema.",
+            "mechanismOfAction": "Immune response modulation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Skin irritation", "Itching"],
+            "manufacturer": "SkinCare"
+        },
+        {
+            "id": "3z5a7b9c-1d2e-3f4g-5h6i-7j8k9l0m1n2o",
+            "name": "Oncoshield",
+            "status": "Approved",
+            "description": "Targeted therapy for lung cancer.",
+            "mechanismOfAction": "EGFR inhibition",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Skin rash", "Diarrhea"],
+            "manufacturer": "CancerTech"
+        },
+        {
+            "id": "4a6b8c0d-2e3f-4g5h-6i7j-8k9l0m1n2o3p",
+            "name": "Immunoguard",
+            "status": "Pending",
+            "description": "Novel immunotherapy for lymphoma.",
+            "mechanismOfAction": "B-cell targeting",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Fever", "Chills", "Fatigue"],
+            "manufacturer": "ImmuneHealth"
+        },
+        {
+            "id": "5b7c9d1e-3f4g-5h6i-7j8k-9l0m1n2o3p4q",
+            "name": "Gastromax",
+            "status": "Approved",
+            "description": "Treatment for inflammatory bowel disease.",
+            "mechanismOfAction": "Gut inflammation reduction",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Nausea", "Abdominal pain"],
+            "manufacturer": "GutHealth"
+        },
+        {
+            "id": "6c8d0e2f-4g5h-6i7j-8k9l-0m1n2o3p4q5r",
+            "name": "Diabecare",
+            "status": "Pending",
+            "description": "Novel insulin sensitizer for type 2 diabetes.",
+            "mechanismOfAction": "Insulin receptor modification",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Hypoglycemia risk", "Weight changes"],
+            "manufacturer": "DiabetesCare"
+        },
+        {
+            "id": "7d9e1f3g-5h6i-7j8k-9l0m-1n2o3p4q5r6s",
+            "name": "Cardioguard",
+            "status": "Approved",
+            "description": "Advanced anticoagulant therapy.",
+            "mechanismOfAction": "Factor Xa inhibition",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Bleeding risk", "Bruising"],
+            "manufacturer": "HeartCare"
+        },
+        {
+            "id": "8e0f2g4h-6i7j-8k9l-0m1n-2o3p4q5r6s7t",
+            "name": "Osteoflex",
+            "status": "Pending",
+            "description": "Novel treatment for osteoarthritis.",
+            "mechanismOfAction": "Cartilage regeneration",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Joint pain", "Stiffness"],
+            "manufacturer": "JointCare"
+        }
+    ]
+}
