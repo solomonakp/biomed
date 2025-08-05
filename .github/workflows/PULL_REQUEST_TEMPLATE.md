@@ -32,11 +32,10 @@ Section dedicated to explain how and what to test in this PR.
 
 (Optional) Section dedicated to add any screenshots or other documents we find relevant to help understand or analyse this PR.
 
--   Image 1 example
-
-    -   <details closed>
-         <img src="https://static01.nyt.com/images/2018/09/01/science/01TB-CATS/01TB-CATS-videoSixteenByNineJumbo1600.jpg" width="100%" height="50%">
-         </details>
+- Image 1 example
+    - <details closed>
+       <img src="https://static01.nyt.com/images/2018/09/01/science/01TB-CATS/01TB-CATS-videoSixteenByNineJumbo1600.jpg" width="100%" height="50%">
+       </details>
 
 # Dependencies or blockers
 
