@@ -1,4 +1,3 @@
-// Drug Type
 export type Drug = {
     id: string;
     name: string;
@@ -19,7 +18,6 @@ type Metadata = {
     last: MetaString;
 };
 
-// Collection of Drugs
 export type Drugs = {
     drugs: Drug[];
     metadata?: Metadata;

@@ -54,7 +54,7 @@ describe('use-debounced-callback hook', () => {
         expect(callback).toHaveBeenCalledWith(1);
     });
 
-    it('doesnt flush twice', () => {
+    it('should flush twice', () => {
         const callback = jest.fn();
         const { result, rerender } = renderHook(() =>
             useDebouncedCallback(callback, 100),
@@ -68,7 +68,7 @@ describe('use-debounced-callback hook', () => {
         expect(callback).not.toHaveBeenCalled();
     });
 
-    it('doesnt flush after being called if not called since', () => {
+    it('should flush after being called if not called since', () => {
         const callback = jest.fn();
         const { result } = renderHook(() =>
             useDebouncedCallback(callback, 100),
@@ -81,7 +81,7 @@ describe('use-debounced-callback hook', () => {
         expect(callback).not.toHaveBeenCalled();
     });
 
-    it('doesnt still call after flush if not called since', () => {
+    it('should still call after flush if not called since', () => {
         const callback = jest.fn();
         const { result } = renderHook(() =>
             useDebouncedCallback(callback, 100),
@@ -108,7 +108,6 @@ describe('use-debounced-callback hook', () => {
         expect(callback).toHaveBeenCalledWith(3);
     });
 
-    // Note: this might not be desired but this is what happens
     it('flushes on option changes', () => {
         const callback = jest.fn();
         const { result, rerender } = renderHook(
@@ -120,7 +119,6 @@ describe('use-debounced-callback hook', () => {
         expect(callback).toHaveBeenCalledWith(1);
     });
 
-    // Note: this might not be desired but this is what happens
     it('cancels on option changes', () => {
         const callback = jest.fn();
         const { result, rerender } = renderHook(
@@ -217,26 +215,22 @@ describe('use-debounced-callback hook', () => {
             useDebouncedCallback(callback, { delay: 100, leading: true }),
         );
 
-        // The first call fires immediately
         result.current('a');
         expect(callback).toHaveBeenCalledTimes(1);
         expect(callback).toHaveBeenCalledWith('a');
 
-        // A second call during delay period should be ignored
         result.current('b');
-        expect(callback).toHaveBeenCalledTimes(1); // Still only 'a'
+        expect(callback).toHaveBeenCalledTimes(1);
 
-        // After delay, no trailing execution should happen
         jest.advanceTimersByTime(100);
-        expect(callback).toHaveBeenCalledTimes(1); // Still only 'a'
+        expect(callback).toHaveBeenCalledTimes(1);
 
-        // After delay has passed, leading state should reset - next call fires immediately
         result.current('c');
         expect(callback).toHaveBeenCalledTimes(2);
         expect(callback).toHaveBeenNthCalledWith(2, 'c');
     });
 
-    it('doesnt call on leading edge if leading changes from true to false', () => {
+    it('should call on leading edge if leading changes from true to false', () => {
         const callback = jest.fn();
         const { result, rerender } = renderHook(
             ({ leading }: { leading?: boolean } = { leading: true }) =>
@@ -339,21 +333,17 @@ describe('use-debounced-callback hook', () => {
             useDebouncedCallback(callback, { delay: 100, leading: true }),
         );
 
-        // First call fires immediately
         result.current('a');
         expect(callback).toHaveBeenCalledTimes(1);
         expect(callback).toHaveBeenCalledWith('a');
 
-        // Second call is debounced
         result.current('b');
         expect(callback).toHaveBeenCalledTimes(1);
 
-        // Cancel the debounced call
         result.current.cancel();
         jest.advanceTimersByTime(100);
         expect(callback).toHaveBeenCalledTimes(1);
 
-        // Next call should fire immediately again since cancel reset the leading flag
         result.current('c');
         expect(callback).toHaveBeenCalledTimes(2);
         expect(callback).toHaveBeenCalledWith('c');
@@ -393,11 +383,11 @@ describe('use-debounced-callback hook', () => {
         expect(callback).toHaveBeenCalledWith('first');
 
         result.current('second');
-        expect(callback).toHaveBeenCalledTimes(1); // Still only first call
+        expect(callback).toHaveBeenCalledTimes(1);
 
         callback.mockClear();
         jest.advanceTimersByTime(100);
-        expect(callback).not.toHaveBeenCalled(); // This is the fix
+        expect(callback).not.toHaveBeenCalled();
 
         result.current('third');
         expect(callback).toHaveBeenCalledTimes(1);

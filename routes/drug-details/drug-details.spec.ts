@@ -13,10 +13,8 @@ test.describe('Drug Details Page', () => {
 
         await detailsPage.goto(undefined, { waitUntil: 'domcontentloaded' });
 
-        // Verify page heading
         await expect(detailsPage.getPageHeading()).toBeVisible();
 
-        // Verify drug details
         const details = detailsPage.getDrugDetails();
         const testDrug = detailsPage.testDrug;
 
@@ -31,7 +29,6 @@ test.describe('Drug Details Page', () => {
         );
         await expect(details.manufacturer).toHaveText(testDrug.manufacturer);
 
-        // // Verify side effects list
         for (const effect of testDrug.sideEffects) {
             await expect(details.sideEffects).toContainText(effect);
         }

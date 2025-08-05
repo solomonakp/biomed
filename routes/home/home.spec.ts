@@ -38,7 +38,6 @@ test.describe('Home Page', () => {
 
         await homePage.goto({ waitUntil: 'commit' });
 
-        // Intercept API request and delay response
         await page.route('**/drugs**', async (route) => {
             await new Promise((resolve) => setTimeout(resolve, 1000));
             await route.continue();
@@ -150,30 +149,23 @@ test.describe('Home Page', () => {
 
         await homePage.goto({ waitUntil: 'domcontentloaded' });
 
-        // Get initial data
         await expect(homePage.getDrugTable()).toBeVisible();
         const initialDrugs = await homePage.getDrugTableBodyRows();
         const initialDrug = initialDrugs[1];
 
-        // Check next button is visible when there's more data
         const nextButton = homePage.getNextButton();
         await expect(nextButton).toBeVisible();
 
-        // Click next and verify new data loads
         await nextButton.click();
 
-        // Verify we have new data
         const newDrugs = await homePage.getDrugTableBodyRows();
         expect(newDrugs).not.toContainEqual(initialDrug);
 
-        // Previous button should now be visible
         const prevButton = page.getByRole('button', { name: /previous/ });
         await expect(prevButton).toBeVisible();
 
-        // Go back to first page
         await prevButton.click();
 
-        // Verify we're back to initial data
         const finalDrugs = await homePage.getDrugTableBodyRows();
         expect(finalDrugs.length).toEqual(initialDrugs.length);
     });
