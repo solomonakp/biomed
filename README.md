@@ -1,36 +1,143 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BioMed
+
+A proof of concept for managing and viewing drug candidates.
+
+![homepage](./public/homepage.png)
+
+&nbsp;
+
+![details](./public/details.png)
+
+This is a proof of concept for a drug candidate management system. The application provides an intuitive interface for viewing and searching drug candidates, with detailed information about each drug's status, clinical trials, mechanism of action, and side effects.
+
+&nbsp;
+
+## Features
+
+- ✔️ List Drug Candidates
+- ✔️ Search by Drug Name
+- ✔️ View Detailed Drug Information
+- ✔️ Pagination Support for Large Data Sets
+- ✔️ Drug Status Indicators (Approved/Pending)
+- ✔️ Responsive Design
+- ✔️ Loading States
+- ✔️ Bookmarkable Drug Details Pages
+- ✔️ Automatic Form Validation
+- ✔️ A11Y Compliant
+- ✔️ Error handling and Recovery
+
+&nbsp;
+
+## Design
+
+View the application design mockup on [Figma](https://www.figma.com/design/kYmkptgEw4Eykm3GuBlhdo/BioMed?node-id=0-1)
+
+## Built With
+
+- TypeScript, React, Next.js
+- TailwindCSS
+- Playwright for E2E Testing
+- Jest, React Testing Library
+- JSON Server for API Mocking
+- Figma for UI Design
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+To run this project, you will need to have `node`,`npm` or `yarn`, `TypeScript` already installed locally
+
+### Setup
+
+`Clone the project and cd into the directory`
+
+### Install
+
+run `npm install` or `yarn` to install all the dependencies of the project.
+
+### Add env file
+
+create a `.env` file in the project root directory and add the following env vars:
+
+- API_BASE_URL : This is a url which `json-server` will run on example: `http://localhost:4000`
+
+### Usage
+
+run `npm dev` or `yarn dev` to get the project running
+
+open browser and navigate to `http://localhost:3000/`
+
+&nbsp;
+
+### Customizations
+
+The styles are written using TailwindCSS.
+
+To tweak components navigate to following directories:
+
+- `/components` - Reusable UI components
+- `/routes` - Page components and routing logic
+- `/utils` - Utility functions and types
+- `/hooks` - Custom React hooks
+
+To access global styles navigate to `./routes/root-layout.css`
+
+&nbsp;
+
+## Tests
+
+Both E2E and Unit tests are implemented.
+
+### Running Tests
+
+#### All Tests
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### E2E Tests
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run test:e2e
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### Unit Tests
 
-## Learn More
+```bash
+npm run test:unit
+```
 
-To learn more about Next.js, take a look at the following resources:
+- `typecheck` – checks TypeScript types
+- `lint` – runs ESLint
+- `format:check` – checks files with Prettier
+- `test:watch` – starts jest watch
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Other scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `format` – formats all files with Prettier
 
-## Deploy on Vercel
+#### Analysis report
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+&nbsp;
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment
+
+run `npm build` or `yarn build` to generate build folder. You can now serve the build folder on any server. for more information visit [Next.js](https://nextjs.org/docs/pages/building-your-application/deploying).
+
+&nbsp;
+
+## Authors
+
+👤 **Author**
+
+- Github: [solomonakp](https://github.com/solomonakp)
+- twitter: [@dev_chuck](https://twitter.com/dev_chuck)
+
+&nbsp;
+
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
