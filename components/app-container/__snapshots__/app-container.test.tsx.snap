@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`App Container should render the App Container user would see 1`] = `
+<DocumentFragment>
+  <main
+    class="app-container w-full p-4 sm:p-6 md:p-8"
+  >
+    <div
+      class="mx-auto max-w-[1240px] p-6"
+    >
+      hi
+    </div>
+  </main>
+</DocumentFragment>
+`;

@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom';
+import { toHaveNoViolations } from 'jest-axe';
 
 const { getComputedStyle } = window;
 window.getComputedStyle = (elt) => getComputedStyle(elt);
@@ -25,3 +26,5 @@ class ResizeObserver {
 }
 
 window.ResizeObserver = ResizeObserver;
+
+expect.extend(toHaveNoViolations);

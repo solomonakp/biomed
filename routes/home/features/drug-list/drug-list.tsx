@@ -78,7 +78,7 @@ export const DrugList = ({ drugs }: Props) => {
             <section className="relative table-section">
                 {isDrugListEmpty && (
                     <EmptyState
-                        title="No results found"
+                        title="No Drug Candidate found"
                         description={`Try search another name to find what you're looking for.`}
                     />
                 )}
@@ -101,6 +101,7 @@ export const DrugList = ({ drugs }: Props) => {
                                         onClick={() =>
                                             router.push(`/drugs/${drug.id}`)
                                         }
+                                        data-testId="body-row"
                                     >
                                         <TableData>{drug.name}</TableData>
                                         <TableData
@@ -121,66 +122,71 @@ export const DrugList = ({ drugs }: Props) => {
                 )}
             </section>
             {/* Note: This will be refactored to use button component */}
-            <section>
-                <div className="max-w-screen-xl mx-auto mt-8  text-(--color-font-black) ">
-                    <div
-                        className="hidden justify-center sm:flex"
-                        aria-label="Pagination"
-                    >
-                        <ul className="flex items-center gap-1">
-                            {drugList.metadata?.prev && (
-                                <li className="mr-3">
-                                    <button
-                                        className="w-10 h-10 flex items-center rounded-lg justify-center bg-(--color-accent) rounded-4 hover:bg-gray-100 transition-colors"
-                                        aria-label="previous-button"
-                                        onClick={handlePrevClick}
-                                    >
-                                        <span className="inline-flex items-center gap-x-2">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20"
-                                                fill="currentColor"
-                                                className="w-5 h-5"
-                                            >
-                                                <path
-                                                    fillRule="evenodd"
-                                                    d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
-                                                    clipRule="evenodd"
-                                                />
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </li>
-                            )}
+            {meta && (
+                <section>
+                    <div className="max-w-screen-xl mx-auto mt-8  text-(--color-font-black)">
+                        <nav
+                            className="justify-center sm:flex"
+                            aria-labelledby="pagination"
+                            data-testid="pagination"
+                        >
+                            <ul className="flex items-center gap-1">
+                                {drugList.metadata?.prev && (
+                                    <li className="mr-3">
+                                        <button
+                                            className="w-10 h-10 flex items-center rounded-lg justify-center bg-(--color-accent) rounded-4 hover:bg-gray-100 transition-colors"
+                                            aria-label="previous"
+                                            onClick={handlePrevClick}
+                                            data-testid="previous"
+                                        >
+                                            <span className="inline-flex items-center gap-x-2">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    className="w-5 h-5"
+                                                >
+                                                    <path
+                                                        fillRule="evenodd"
+                                                        d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                                                        clipRule="evenodd"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </li>
+                                )}
 
-                            {drugList.metadata?.next && (
-                                <li>
-                                    <button
-                                        className="w-10 h-10 flex items-center justify-center rounded-lg bg-(--color-accent) hover:bg-gray-100 transition-colors"
-                                        aria-label="next-button"
-                                        onClick={handleNextClick}
-                                    >
-                                        <span className="inline-flex items-center gap-x-2">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20"
-                                                fill="currentColor"
-                                                className="w-5 h-5"
-                                            >
-                                                <path
-                                                    fillRule="evenodd"
-                                                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                                                    clipRule="evenodd"
-                                                />
-                                            </svg>
-                                        </span>
-                                    </button>
-                                </li>
-                            )}
-                        </ul>
+                                {drugList.metadata?.next && (
+                                    <li>
+                                        <button
+                                            className="w-10 h-10 flex items-center justify-center rounded-lg bg-(--color-accent) hover:bg-gray-100 transition-colors"
+                                            aria-label="next"
+                                            onClick={handleNextClick}
+                                            data-testid="next"
+                                        >
+                                            <span className="inline-flex items-center gap-x-2">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 20 20"
+                                                    fill="currentColor"
+                                                    className="w-5 h-5"
+                                                >
+                                                    <path
+                                                        fillRule="evenodd"
+                                                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                                        clipRule="evenodd"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </li>
+                                )}
+                            </ul>
+                        </nav>
                     </div>
-                </div>
-            </section>
+                </section>
+            )}
         </>
     );
 };

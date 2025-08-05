@@ -5,7 +5,7 @@ export const E2E_BASE_URL = 'http://127.0.0.1:3000';
 export default defineConfig({
     timeout: 120_000,
     testMatch: '**/*.spec.{t,j}s',
-    testDir: './e-2-e',
+    testDir: './',
     /* Run tests in files in parallel */
     fullyParallel: true,
     /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -65,7 +65,7 @@ export default defineConfig({
 
     /* Run your local dev server before starting the tests */
     webServer: {
-        command: 'yarn dev',
+        command: 'yarn dev:test',
         url: E2E_BASE_URL,
         reuseExistingServer: process.env.CI !== 'true',
         timeout: 120_000,

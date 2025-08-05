@@ -20,12 +20,11 @@ const createGetDrugsByNameEndPoint = (currentPage: number, name: string) =>
  */
 
 export const getDrugsByName = async (name: string) => {
-    console.log(name, 'name');
     const res = await fetch(createGetDrugsByNameEndPoint(1, name), {
-        // next: {
-        //     tags: [DRUGS_TAG],
-        //     revalidate: REVALIDATION_TIME,
-        // },
+        next: {
+            tags: [DRUGS_TAG],
+            revalidate: REVALIDATION_TIME,
+        },
     });
     const data = (await res.json()) as Drugs;
 
@@ -34,10 +33,10 @@ export const getDrugsByName = async (name: string) => {
 
 export const getDrugsByPaginationUrl = async (url: string) => {
     const res = await fetch(url, {
-        // next: {
-        //     tags: [DRUGS_TAG],
-        //     revalidate: REVALIDATION_TIME,
-        // },
+        next: {
+            tags: [DRUGS_TAG],
+            revalidate: REVALIDATION_TIME,
+        },
     });
     const data = (await res.json()) as Drugs;
 
