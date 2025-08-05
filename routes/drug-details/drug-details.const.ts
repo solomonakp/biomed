@@ -1,4 +1,4 @@
 /**
  * Controls page revalidation time
  */
-export const REVALIDATION_TIME = 0 as const;
+export const REVALIDATION_TIME = 60 as const;
