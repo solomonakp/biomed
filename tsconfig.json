@@ -29,7 +29,8 @@
             "@utils/*": ["utils/*"],
             "@lib/*": ["lib/*"],
             "@components/*": ["components/*"],
-            "@features/*": ["features/*"]
+            "@features/*": ["features/*"],
+            "@playwright/*": ["playwright/*"]
         }
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

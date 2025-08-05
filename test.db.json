@@ -1,0 +1,304 @@
+{
+    "drugs": [
+        {
+            "id": "1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p",
+            "name": "Anxiorelief",
+            "status": "Pending",
+            "description": "Next-generation anxiety disorder treatment.",
+            "mechanismOfAction": "GABA receptor modulation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Mild sedation", "Memory changes"],
+            "manufacturer": "MindPharm"
+        },
+        {
+            "id": "2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q",
+            "name": "Pancregen",
+            "status": "Approved",
+            "description": "Revolutionary treatment for pancreatic insufficiency.",
+            "mechanismOfAction": "Enzyme replacement therapy",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Abdominal discomfort", "Nausea"],
+            "manufacturer": "DigestiveCare"
+        },
+        {
+            "id": "3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r",
+            "name": "Glaucostat",
+            "status": "Pending",
+            "description": "Advanced treatment for glaucoma.",
+            "mechanismOfAction": "Intraocular pressure reduction",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Eye irritation", "Blurred vision"],
+            "manufacturer": "OpticsHealth"
+        },
+        {
+            "id": "4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9s",
+            "name": "Fertigen",
+            "status": "Approved",
+            "description": "Novel fertility treatment.",
+            "mechanismOfAction": "Hormone optimization",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Mood changes", "Weight gain"],
+            "manufacturer": "ReproHealth"
+        },
+        {
+            "id": "5e6f7g8h-9i0j-1k2l-3m4n-5o6p7q8r9s0t",
+            "name": "Thalassex",
+            "status": "Pending",
+            "description": "Treatment for beta-thalassemia.",
+            "mechanismOfAction": "Hemoglobin synthesis enhancement",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Fatigue", "Iron overload"],
+            "manufacturer": "HematoTech"
+        },
+        {
+            "id": "6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1u",
+            "name": "Septicare",
+            "status": "Approved",
+            "description": "Advanced treatment for sepsis.",
+            "mechanismOfAction": "Multi-pathway inflammation control",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Blood pressure changes", "Kidney stress"],
+            "manufacturer": "CriticalCare"
+        },
+        {
+            "id": "7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2v",
+            "name": "Celiacure",
+            "status": "Pending",
+            "description": "Novel treatment for celiac disease.",
+            "mechanismOfAction": "Gluten enzyme degradation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Digestive changes", "Nutrient absorption changes"],
+            "manufacturer": "GutScience"
+        },
+        {
+            "id": "8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3w",
+            "name": "Endorest",
+            "status": "Approved",
+            "description": "Treatment for endometriosis.",
+            "mechanismOfAction": "Hormone receptor modulation",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Menstrual changes", "Breast tenderness"],
+            "manufacturer": "WomenHealth"
+        },
+        {
+            "id": "9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4x",
+            "name": "Vertiguard",
+            "status": "Pending",
+            "description": "Advanced treatment for vertigo.",
+            "mechanismOfAction": "Vestibular system stabilization",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Mild drowsiness", "Dry mouth"],
+            "manufacturer": "BalanceCare"
+        },
+        {
+            "id": "0j1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5y",
+            "name": "Psorilen",
+            "status": "Approved",
+            "description": "Treatment for severe psoriasis.",
+            "mechanismOfAction": "IL-23 inhibition",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Skin sensitivity", "Increased infection risk"],
+            "manufacturer": "DermaHealth"
+        },
+        {
+            "id": "1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z",
+            "name": "Cytopro",
+            "status": "Pending",
+            "description": "Targeted therapy for pancreatic cancer.",
+            "mechanismOfAction": "Multi-kinase inhibition",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Fatigue", "Loss of appetite"],
+            "manufacturer": "OncologyTech"
+        },
+        {
+            "id": "2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a",
+            "name": "Broncoease",
+            "status": "Approved",
+            "description": "Long-acting treatment for bronchitis.",
+            "mechanismOfAction": "Mucolytic action",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Cough", "Throat irritation"],
+            "manufacturer": "RespiratoryHealth"
+        },
+        {
+            "id": "3m4n5o6p-7q8r-9s0t-1u2v-3w4x5y6z7a8b",
+            "name": "Nephromax",
+            "status": "Pending",
+            "description": "Treatment for polycystic kidney disease.",
+            "mechanismOfAction": "Cyst formation inhibition",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Back pain", "Urinary changes"],
+            "manufacturer": "RenalTech"
+        },
+        {
+            "id": "4n5o6p7q-8r9s-0t1u-2v3w-4x5y6z7a8b9c",
+            "name": "Hemolax",
+            "status": "Approved",
+            "description": "Treatment for hemophilia A.",
+            "mechanismOfAction": "Factor VIII replacement",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Injection site reactions", "Antibody development"],
+            "manufacturer": "BloodHealth"
+        },
+        {
+            "id": "5o6p7q8r-9s0t-1u2v-3w4x-5y6z7a8b9c0d",
+            "name": "Gastropen",
+            "status": "Pending",
+            "description": "Treatment for gastroparesis.",
+            "mechanismOfAction": "Gastric motility enhancement",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Nausea", "Headache"],
+            "manufacturer": "DigestionCare"
+        },
+        {
+            "id": "6p7q8r9s-0t1u-2v3w-4x5y-6z7a8b9c0d1e",
+            "name": "Lymphocare",
+            "status": "Approved",
+            "description": "Treatment for lymphedema.",
+            "mechanismOfAction": "Lymphatic drainage enhancement",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Skin changes", "Mild discomfort"],
+            "manufacturer": "VascularHealth"
+        },
+        {
+            "id": "7q8r9s0t-1u2v-3w4x-5y6z-7a8b9c0d1e2f",
+            "name": "Myelogen",
+            "status": "Pending",
+            "description": "Treatment for myelodysplastic syndrome.",
+            "mechanismOfAction": "Bone marrow stimulation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Anemia", "Infection risk"],
+            "manufacturer": "HematologyTech"
+        },
+        {
+            "id": "8r9s0t1u-2v3w-4x5y-6z7a-8b9c0d1e2f3g",
+            "name": "Tendonex",
+            "status": "Approved",
+            "description": "Treatment for tendonitis.",
+            "mechanismOfAction": "Collagen synthesis promotion",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Local pain", "Stiffness"],
+            "manufacturer": "OrthoCare"
+        },
+        {
+            "id": "9s0t1u2v-3w4x-5y6z-7a8b-9c0d1e2f3g4h",
+            "name": "Thyrogen",
+            "status": "Pending",
+            "description": "Treatment for thyroid disorders.",
+            "mechanismOfAction": "Thyroid hormone regulation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Weight changes", "Mood changes"],
+            "manufacturer": "EndoHealth"
+        },
+        {
+            "id": "0t1u2v3w-4x5y-6z7a-8b9c-0d1e2f3g4h5i",
+            "name": "Angiomax",
+            "status": "Approved",
+            "description": "Treatment for angina.",
+            "mechanismOfAction": "Calcium channel modulation",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Dizziness", "Headache"],
+            "manufacturer": "CardiacTech"
+        },
+        {
+            "id": "1u2v3w4x-5y6z-7a8b-9c0d-1e2f3g4h5i6j",
+            "name": "Fibrogen",
+            "status": "Pending",
+            "description": "Treatment for pulmonary fibrosis.",
+            "mechanismOfAction": "Antifibrotic action",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Breathlessness", "Cough"],
+            "manufacturer": "LungHealth"
+        },
+        {
+            "id": "2v3w4x5y-6z7a-8b9c-0d1e-2f3g4h5i6j7k",
+            "name": "Osteosin",
+            "status": "Approved",
+            "description": "Treatment for osteoporosis.",
+            "mechanismOfAction": "Bone density enhancement",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Joint pain", "Calcium changes"],
+            "manufacturer": "BoneHealth"
+        },
+        {
+            "id": "3w4x5y6z-7a8b-9c0d-1e2f-3g4h5i6j7k8l",
+            "name": "Prostacare",
+            "status": "Pending",
+            "description": "Treatment for prostate enlargement.",
+            "mechanismOfAction": "5-alpha reductase inhibition",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Sexual function changes", "Urinary changes"],
+            "manufacturer": "MensHealth"
+        },
+        {
+            "id": "4x5y6z7a-8b9c-0d1e-2f3g-4h5i6j7k8l9m",
+            "name": "Cerebrex",
+            "status": "Approved",
+            "description": "Treatment for cerebral palsy.",
+            "mechanismOfAction": "Neuromuscular junction modulation",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Muscle weakness", "Fatigue"],
+            "manufacturer": "NeuroCare"
+        },
+        {
+            "id": "5y6z7a8b-9c0d-1e2f-3g4h-5i6j7k8l9m0n",
+            "name": "Lymphogen",
+            "status": "Pending",
+            "description": "Treatment for lymphoma.",
+            "mechanismOfAction": "B-cell targeting therapy",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Infection risk", "Fatigue"],
+            "manufacturer": "OncoTech"
+        },
+        {
+            "id": "6z7a8b9c-0d1e-2f3g-4h5i-6j7k8l9m0n1o",
+            "name": "Arthrogen",
+            "status": "Approved",
+            "description": "Treatment for osteoarthritis.",
+            "mechanismOfAction": "Cartilage regeneration",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Joint pain", "Swelling"],
+            "manufacturer": "JointHealth"
+        },
+        {
+            "id": "7a8b9c0d-1e2f-3g4h-5i6j-7k8l9m0n1o2p",
+            "name": "Dermagen",
+            "status": "Pending",
+            "description": "Treatment for severe acne.",
+            "mechanismOfAction": "Sebum production regulation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Skin dryness", "Sun sensitivity"],
+            "manufacturer": "SkinHealth"
+        },
+        {
+            "id": "8b9c0d1e-2f3g-4h5i-6j7k-8l9m0n1o2p3q",
+            "name": "Gastrocure",
+            "status": "Approved",
+            "description": "Treatment for gastric ulcers.",
+            "mechanismOfAction": "Acid secretion inhibition",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Nausea", "Headache"],
+            "manufacturer": "DigestHealth"
+        },
+        {
+            "id": "9c0d1e2f-3g4h-5i6j-7k8l-9m0n1o2p3q4r",
+            "name": "Cardiocare",
+            "status": "Pending",
+            "description": "Treatment for heart failure.",
+            "mechanismOfAction": "Beta-receptor modulation",
+            "clinicalTrials": "Phase II ongoing",
+            "sideEffects": ["Fatigue", "Dizziness"],
+            "manufacturer": "HeartHealth"
+        },
+        {
+            "id": "0d1e2f3g-4h5i-6j7k-8l9m-0n1o2p3q4r5s",
+            "name": "Neuropro",
+            "status": "Approved",
+            "description": "Treatment for neuropathy.",
+            "mechanismOfAction": "Nerve regeneration support",
+            "clinicalTrials": "Phase III completed",
+            "sideEffects": ["Tingling", "Numbness"],
+            "manufacturer": "NerveHealth"
+        }
+    ]
+}

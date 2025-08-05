@@ -1,3 +1,4 @@
+'use client';
 import { useRef } from 'react';
 import { SIZES, VARIANT_STYLES } from './loader.const';
 import type { LoaderRef as Ref, LoaderProps as Props } from './loader.props';
@@ -18,7 +19,9 @@ export const Loader = (props: Props) => {
             className={`flex items-center justify-center bg-inherit z-(--z-index-loader) h-full ${className} ${VARIANT_STYLES[variant]}`}
             aria-live="assertive"
             ref={ref}
+            data-testid="loader"
             {...rest}
+            aria-label="loading screen indicator"
         >
             <svg
                 aria-hidden="true"

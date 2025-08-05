@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Button should render the Button user would see 1`] = `
+<DocumentFragment>
+  <button
+    class="undefined px-5 py-1.5 font-bold  text-(--color-font-black) duration-150 bg-(--bg-button) rounded-lg hover:bg-indigo-100 active:bg-indigo-200 relative overflow-hidden inline-block transition focus:outline-black ease-in-out disabled:bg-gray-200 "
+    role="button"
+    title="my button"
+    type="button"
+  >
+    my button
+  </button>
+</DocumentFragment>
+`;

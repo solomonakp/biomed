@@ -22,6 +22,8 @@ export const getDrug = async (id: string) => {
         },
     });
 
+    if (!res.ok) return undefined;
+
     const data = (await res.json()) as Drug;
 
     return data;

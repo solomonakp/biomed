@@ -4,7 +4,6 @@ import { getDrugs } from './drugs.server';
 
 export const Drugs = async () => {
     const drugs = await getDrugs();
-    console.log(drugs, 'drugs');
 
     if (drugs.drugs.length === 0) {
         return (

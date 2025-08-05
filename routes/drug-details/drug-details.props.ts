@@ -3,3 +3,8 @@ export type DrugDetailsPageProps = {
         id: string;
     }>;
 };
+
+export type DrugDetailsErrorPageProps = {
+    error: Error & { digest?: string };
+    reset: () => void;
+};
